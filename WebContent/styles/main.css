@@ -1,0 +1,305 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+body {
+  background : #112f41;
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 0.9em;
+  min-width: 600px;
+}
+
+ul {
+  list-style: none;
+}
+
+.header {
+  align-items: center;
+  background:
+    url('https://images.unsplash.com/photo-1536081905080-f14fb4d6e52d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3f639284980717ea7ce908eb9e79671a&auto=format&fit=crop&w=2615&q=80')
+    no-repeat 50% 50%;
+  background-size: 100%;
+  display: flex;
+  height: 300px;
+  min-width: 50%;
+}
+
+/* top bar */
+.top-bar {
+  align-items: center;
+  background: #f2b134;
+  opacity: 0.9;
+  display: flex;
+  height: 30px;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+}
+
+#avatar {
+  color: #112f41;
+  margin-left: 10px;
+  margin-right: 30px;
+}
+
+#logout-link {
+  padding-left: 10px;
+  color: #112f41;
+}
+
+/* top navigation */
+.top-nav {
+  flex: 1;
+}
+
+.top-nav a{
+  color: #112f41;
+  margin-left: 30px;
+  text-decoration: none;
+}
+
+#welcome-msg {
+  border-right: 1px soild #112f41;
+  color: #112f41;
+  padding-right 10px;
+}
+
+.banner {
+  background: #cfcdcc;
+  opacity: 0.6;
+  margin-left: 40px;
+  padding: 15px;
+  font-weight: 400;
+  font-size: 1.1em;
+  color: #112f41;
+}
+
+.banner>p>span {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+/**
+ * login form
+ */
+#login-form {
+	color: #624630;
+	margin: 0px auto;
+	overflow: auto;
+	padding: 40px;
+	width: 350px;
+}
+
+#login-form label {
+	display: block;
+}
+
+#login-form input {
+	border: none;
+	display: block;
+	margin-bottom: 10px;
+	padding: 8px;
+	width: 100%;
+}
+
+#login-form #login-btn {
+	cursor: pointer;
+	float: right;
+	padding: 8px 20px;
+	text-align: right;
+}
+
+#login-form #register-form-btn {
+	cursor: pointer;
+	float: left;
+	padding: 8px 10px;
+	text-align: left;
+}
+
+#login-error {
+	clear: both;
+	color: #990000;
+	padding-top: 10px;
+}
+
+/**
+ * register form
+ */
+#register-form {
+	color: #624630;
+	margin: 0px auto;
+	overflow: auto;
+	padding: 40px;
+	width: 350px;
+}
+
+#register-form label {
+	display: block;
+}
+
+#register-form input {
+	border: none;
+	display: block;
+	margin-bottom: 10px;
+	padding: 8px;
+	width: 100%;
+}
+
+#register-form #login-form-btn {
+	cursor: pointer;
+	float: left;
+	padding: 8px 10px;
+	text-align: left;
+}
+
+#register-form #register-btn {
+	cursor: pointer;
+	float: right;
+	padding: 8px 20px;
+	text-align: right;
+}
+
+#register-result {
+	clear: both;
+	color: #990000;
+	padding-top: 10px;
+}
+.nav-btn-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  min-width: 600px;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.nav-btn-group button {
+  background: #f2b134;
+  padding: 10px 15px;
+  width: 180px;
+  outline: none;
+  text-align: center;
+  border: 1px solid #112f41;
+  cursor: pointer;
+}
+
+.nav-btn-group button:hover {
+  background-color: #ed553b;
+  color: #ffffff;
+}
+
+.nav-btn.active {
+  background-color: #ed553b;
+  color: #ffffff;
+}
+
+#item-list .notice{
+  font-size: 16px;
+  padding: 60px;
+  text-align: center;
+}
+
+.item {
+  padding-left: 15%;
+  padding-right: 15%;
+  align-items: center;
+  display: flex;
+  margin-top: 20px;
+  transition: background-color 100ms linear;
+  min-width: 600px;
+  min-height: 120px;
+}
+
+.item:hover {
+  background: #f2b134;
+  //color: #112f41;
+  transition: background-color 100ms linear;
+}
+
+.item img {
+  height: 95px;
+  width: 100px;
+  
+}
+
+.item>div:first-of-type {
+	flex: 1;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.item-category {
+  margin: 10px; 
+  text-align: center;
+  width: 150px;
+  background: #c8c8c8;
+  color: #112f41;
+  padding: 5px;
+} 
+
+.item-name {
+  margin: 10px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.2em;
+}
+
+.item-name:hover {
+  color: #112f41;
+  text-decoration: underline;
+}
+
+.item-address {
+  margin: 10px;
+  line-height: 20px;
+  
+}
+
+
+.fav-link {
+  color: #ed553b;
+  margin-bottom: 6%;
+  padding-right: 5px;
+  cursor: pointer;
+}
+
+.fav-link:hover{
+  color: #ed553b;
+}
+
+
+/**
+ * footer section
+ */
+footer {
+	background: #081821;
+	font-size: 0.8em;
+	height: 200px;
+	position: relative;
+}
+
+footer p {
+	text-align: center;
+}
+
+footer p.title {
+	font-size: 1.2em;
+	padding: 15px;
+}
+
+footer ul {
+	align-items: center;
+	display: flex;
+	padding: 20px;
+}
+
+footer ul li {
+	flex: 1;
+}

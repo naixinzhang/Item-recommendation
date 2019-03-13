@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">  
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <title>Your Personal Events Guide</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <div class="header">
+    <header class="top-bar">
+      <nav class="top-nav">
+        <a href="#">HOME</a>
+        <a href="#">CONTACT</a>
+        <a href="#">ABOUT</a>
+      </nav>
+      <span id="welcome-msg"></span>
+      <a id="logout-link" href="logout">Logout</a>
+      <span style="font-size: 1.5em"><i id="avatar" class="fab fa-earlybirds"></i></span>
+    </header>
+    <header class="banner">
+      <p>
+        <span>
+          Your Personal<br/>
+          Events Guide<br/>
+        </span>
+        Find events near you<br/>
+        Heart your favorites<br/>
+        Get events recommendation
+      </p>
+    </header>
+  </div>
+  <section class="main-section">
+      <div id="login-form">
+        <label for="username">Username:</label>
+        <input id="username" name="username" type="text">
+        <label for="password">Password:</label>
+        <input id="password" name="password" type="password">
+        <button id="register-form-btn">New User? Register</button>
+        <button id="login-btn">Login</button>
+        <p id="login-error"></p>
+      </div>
+      
+      <div id="register-form">
+        <label for="username">Username: *</label>
+        <input id="register-username" name="username" type="text">
+        <label for="password">Password: *</label>
+        <input id="register-password" name="password" type="password">
+        <label for="first-name">First Name: *</label>
+        <input id="register-first-name" name="first-name" type="text">
+        <label for="last-name">Last Name: *</label>
+        <input id="register-last-name" name="last-name" type="text">
+        <button id="login-form-btn">Back to Login</button>
+        <button id="register-btn">Register</button>
+        <p id="register-result"></p>
+      </div>
+
+    <div id="btn-container">
+    <div class="nav-btn-group" id="item-nav">
+      <button class="nav-btn active" id="nearby-btn"><i class="fas fa-map-marker-alt fa-lg"></i>&nbsp;&nbsp;Nearby</button>
+      <button class="nav-btn" id="fav-btn"><i class="fa fa-heart fa-lg"></i>&nbsp;&nbsp;My Favorites</button>
+      <button class="nav-btn" id= "recommend-btn"><i class="fa fa-thumbs-up fa-lg"></i>&nbsp;&nbsp;Recommendation</button>
+    </div>
+    </div>
+    
+   <div id="item-container"> 
+   <div class="item-container">
+      <ul id="item-list">
+       <li class="item">
+         <img alt="item image" src="https://s1.ticketm.net/dam/c/80b/f3cd8d24-c3ae-4fa0-b4bc-1ba99f9b380b_106091_TABLET_LANDSCAPE_16_9.jpg"/>
+         <div class="item-info">
+           <p class="item-category">Music</p>
+           <a class="item-name" href="#">The Main Event Concert Series: Female Edition Round 2 featuring Chanel</a>
+           <p class="item-address">One MetLife Stadium Drive | East Rutherford</p>
+         </div>
+         <div class="fav-link">
+         	<i class="fa fa-heart fa-2x"></i>
+         </div>
+       </li>
+     </ul>
+   </div>
+   </div>
+  </section>
+  
+  <footer>
+    <p class="title">What We Do</p>
+    <p>"Help you find the best place around."</p>
+    <ul>
+      <li>
+        <p><i class="fa fa-map-o fa-2x"></i></p>
+        <p>Madison office, WI</p>
+      </li>
+      <li>
+        <p><i class="fa fa-envelope-o fa-2x"></i></p>
+        <p>naixinzhang1104@gmail.com</p>
+      </li>
+      <li>
+        <p><i class="fa fa-phone fa-2x"></i></p>
+        <p>847-602-2131</p>
+      </li>
+    </ul>
+  </footer>
+  
+  <script src="https://rawgit.com/emn178/js-md5/master/build/md5.min.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+</html>
